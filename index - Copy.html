@@ -1,0 +1,417 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ELVORA | Luxury in Every Drop</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #080808;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+:root {
+  --gold: #d4af68;
+}
+
+header {
+  padding: 22px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #080808;
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  color: var(--gold);
+  font-size: 27px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.hero {
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px;
+
+  background:
+    linear-gradient(#0009, #000b),
+    url("https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1600&q=85")
+    center/cover;
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 7vw, 70px);
+  font-weight: normal;
+  margin: 25px 0;
+}
+
+.hero p {
+  color: #ddd;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.tag {
+  color: var(--gold);
+  letter-spacing: 5px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--gold);
+  color: black;
+  border: 1px solid var(--gold);
+  padding: 15px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--gold);
+}
+
+section {
+  padding: 75px 7%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(30px, 5vw, 45px);
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.section-title p {
+  color: #aaa;
+  line-height: 1.7;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.product {
+  text-align: center;
+  background: #131313;
+  border: 1px solid #292929;
+  padding-bottom: 30px;
+  transition: 0.3s;
+}
+
+.product:hover {
+  border-color: var(--gold);
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.product h3 {
+  color: var(--gold);
+  font-family: Georgia, serif;
+  font-size: 25px;
+  margin: 22px 10px 12px;
+}
+
+.product p {
+  color: #aaa;
+  line-height: 1.7;
+  padding: 0 15px;
+  min-height: 50px;
+}
+
+.price {
+  font-size: 26px;
+  margin: 20px 0;
+}
+
+.about {
+  text-align: center;
+  background: #111;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  color: #bbb;
+  line-height: 1.9;
+}
+
+footer {
+  text-align: center;
+  padding: 35px 15px;
+  border-top: 1px solid #333;
+  color: #999;
+  line-height: 2;
+}
+
+footer strong {
+  color: var(--gold);
+  letter-spacing: 4px;
+  font-size: 22px;
+}
+
+@media (max-width: 750px) {
+  header {
+    padding: 20px 4%;
+  }
+
+  .logo {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+
+  nav a {
+    margin-left: 8px;
+    font-size: 12px;
+  }
+
+  section {
+    padding: 55px 5%;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+    max-width: 430px;
+    margin: auto;
+  }
+
+  .product img {
+    height: 350px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">ELVORA</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#collection">Collection</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <div class="tag">LUXURY IN EVERY DROP</div>
+
+    <h1>A Signature of Your Presence.</h1>
+
+    <p>
+      Three distinctive fragrances.
+      One unforgettable identity.
+      Discover your signature scent with ELVORA.
+    </p>
+
+    <a href="#collection" class="btn">
+      EXPLORE COLLECTION
+    </a>
+  </div>
+</section>
+
+<section id="collection">
+
+  <div class="section-title">
+    <h2>The Fragrance Collection</h2>
+    <p>Premium men's fragrances. Every perfume just ₹499.</p>
+  </div>
+
+  <div class="products">
+
+    <!-- AERON -->
+
+    <div class="product">
+
+      <img
+        src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85"
+        alt="ELVORA Aeron perfume"
+        loading="lazy"
+      >
+
+      <h3>ELVORA AERON</h3>
+
+      <p>
+        COOL & FRESH<br>
+        Crisp, refreshing and modern.
+      </p>
+
+      <div class="price">₹499</div>
+
+      <button class="btn"
+        onclick="order('ELVORA AERON')">
+        ORDER NOW
+      </button>
+
+    </div>
+
+    <!-- NOIR -->
+
+    <div class="product">
+
+      <img
+        src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=700&q=85"
+        alt="ELVORA Noir perfume"
+        loading="lazy"
+      >
+
+      <h3>ELVORA NOIR</h3>
+
+      <p>
+        WOODY FRAGRANCE<br>
+        Deep, warm and sophisticated.
+      </p>
+
+      <div class="price">₹499</div>
+
+      <button class="btn"
+        onclick="order('ELVORA NOIR')">
+        ORDER NOW
+      </button>
+
+    </div>
+
+    <!-- OUD ELITE -->
+
+    <div class="product">
+
+      <img
+        src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=700&q=85"
+        alt="ELVORA Oud Elite perfume"
+        loading="lazy"
+      >
+
+      <h3>ELVORA OUD ELITE</h3>
+
+      <p>
+        OUD FRAGRANCE<br>
+        Rich, bold and timeless.
+      </p>
+
+      <div class="price">₹499</div>
+
+      <button class="btn"
+        onclick="order('ELVORA OUD ELITE')">
+        ORDER NOW
+      </button>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+
+  <div class="section-title">
+    <h2>More Than a Fragrance</h2>
+    <p>ELVORA — Luxury in Every Drop</p>
+  </div>
+
+  <p>
+    A fragrance is more than a scent.
+    It is a memory, a statement and a part of
+    your identity. From refreshing cool notes
+    to woody elegance and rich oud,
+    ELVORA brings you a signature fragrance
+    for every occasion.
+  </p>
+
+</section>
+
+<section style="text-align:center">
+
+  <div class="section-title">
+    <h2>Make It Yours</h2>
+    <p>Choose your favourite fragrance and order today.</p>
+  </div>
+
+  <a class="btn"
+     href="#collection">
+     SHOP THE COLLECTION
+  </a>
+
+</section>
+
+<footer>
+  <strong>ELVORA</strong>
+
+  <p>Luxury in Every Drop</p>
+
+  <p>Men's Fragrances | India</p>
+
+  <p>© 2026 ELVORA. All rights reserved.</p>
+</footer>
+
+<script>
+
+// ELVORA OFFICIAL WHATSAPP NUMBER
+const whatsappNumber = "916352654407";
+
+function order(productName) {
+
+  const message =
+    "Hello ELVORA! I want to order " +
+    productName +
+    " for ₹499. Please share the ordering details.";
+
+  const whatsappURL =
+    "https://wa.me/" +
+    whatsappNumber +
+    "?text=" +
+    encodeURIComponent(message);
+
+  window.open(whatsappURL, "_blank");
+
+}
+
+</script>
+
+</body>
+</html>
